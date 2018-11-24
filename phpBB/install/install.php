@@ -342,9 +342,9 @@ $available_dbms = array(
 		'COMMENTS'		=> 'remove_remarks'
 	), 
 	'mysqli' => array(
-		'LABEL'			=> 'MySQL 4.x/5.x',
-		'SCHEMA'		=> 'mysql', 
-		'DELIM'			=> ';', 
+		'LABEL'			=> 'MySQLi',
+		'SCHEMA'		=> 'mysql',
+		'DELIM'			=> ';',
 		'DELIM_BASIC'	=> ';',
 		'COMMENTS'		=> 'remove_remarks'
 	), 
@@ -796,8 +796,8 @@ else
 			case 'mysql':
 			case 'mysql4':
 			case 'mysqli':
-				$check_exts = 'mysql';
-				$check_other = 'mysql';
+				$check_exts = 'mysqli';
+				$check_other = 'mysqli';
 				break;
 
 			case 'postgres':
