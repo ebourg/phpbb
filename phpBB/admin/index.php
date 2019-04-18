@@ -476,7 +476,7 @@ elseif( isset($HTTP_GET_VARS['pane']) && $HTTP_GET_VARS['pane'] == 'right' )
 	//
 	// Guest users
 	//
-	if( count($onlinerow_guest) )
+	if( $onlinerow_guest ? count($onlinerow_guest) : 0)
 	{
 		$guest_users = 0;
 

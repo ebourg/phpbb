@@ -372,7 +372,8 @@ else
 	$db->sql_freeresult($result);
 
 	$select_userlist = '';
-	for($i = 0; $i < count($user_list); $i++)
+	$x = $user_list ? count($user_list) : 0;
+	for($i = 0; $i < $x; $i++)
 	{
 		$select_userlist .= '<option value="' . $user_list[$i]['ban_id'] . '">' . $user_list[$i]['username'] . '</option>';
 		$userban_count++;
@@ -397,8 +398,8 @@ else
 
 	$select_iplist = '';
 	$select_emaillist = '';
-
-	for($i = 0; $i < count($banlist); $i++)
+	$x = $banlist ? count($banlist) : 0; 
+	for($i = 0; $i < $x; $i++)
 	{
 		$ban_id = $banlist[$i]['ban_id'];
 
